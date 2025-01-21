@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+:root {
+  --blue-Gradient:background: linear-gradient(90deg, rgba(91,173,255,1) 0%, rgba(19,115,209,1) 100%);
+  --Secondary-Color: #8491a0;
+  --secondary-text:#C5C5C5;
+  --margin:20px;
+  --padding:20px;
+  --gap-logos:40px;
+  --padding-button:10px;
+  --primary-Color: #ffffff;
+  --card-Color: #2a2a2a;
+  --Background-Color: #161513;
+}
+body,html {
+    height: 100vh;
+    overflow-x: hidden;
+  background-color: var(--Background-Color);
+}
+
+.section01 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+  color: var(--primary-Color);
+  font-weight: bold;
+    }
+    span{
+        margin-bottom: var(--margin);
+    color: var(--secondary-text);
+    
+    }
+  Strong {
+    background: rgb(91,173,255);
+    background: linear-gradient(90deg, rgba(91,173,255,1) 0%, rgba(19,115,209,1) 100%);
+    background-clip:text ;
+    -webkit-text-fill-color: transparent;
+  }
+  p{
+    color: var(--secondary-text);
+    font-weight: lighter;
+    margin-bottom: var(--margin);
+    font-size: 18px;
+  }
+}
+.btn-wrapper {
+    overflow: hidden; 
+   
+  }
+.btn{
+  
+    width: 100%;
+    
+    a{ 
+       
+        display: inline-block; 
+        color: #000;
+        text-decoration: none;
+        margin: var(--margin);
+        padding: var(--padding-button);
+        height: 100%;
+        border-radius: 50px;
+        font-weight:600;
+        transition: 0.3s; 
+    }
+    a{
+       
+        border:none;
+        background: var(--primary-Color);
+    }
+    a:hover{
+        transform: scale(0.9);
+        background: linear-gradient(90deg, rgba(91,173,255,1) 0%, rgba(19,115,209,1) 100%);
+    }
+    
+    
+}
+.section02{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--secondary-text);
+
+    }
+    .logo-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      
+       
+    }
+    .logo-container img{
+        margin:var(--margin);
+        height: 90px;
+        width: 90px;
+    }
+}
