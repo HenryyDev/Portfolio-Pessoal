@@ -10,23 +10,27 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link
       rel="shortcut icon"
       href="assets/avatar (1).png"
       type="image/x-icon"
     />
-    k
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>home projetos contato</header>
+    <header class="mb-4 header">
+      <a href="#section01">Home</a> <a href="#section02">habilidades</a>
+      <a href="#section03">Projetos </a><a href="#footer">Contato</a>
+    </header>
     <main class="container">
-      <div class="section01 my-5">
+      <div class="section01 slideIn my-5" id="section01">
         <img src="assets/avatar (1).png " alt="" width="250" height="223" />
         <h1>Olá, eu sou o <strong>Henry</strong></h1>
         <span>Desenvolvedor front-end</span>
@@ -42,12 +46,19 @@
         </p>
         <div class="btn-wrapper">
           <div class="btn">
-            <a href="#" class="left">Download CV</a>
-            <a href="#contact" class="right">Entrar em contato</a>
+            <a
+              href="assets/CV.Henrique (2).pdf"
+              download="Curriculum-henryDev"
+              class="left"
+              >Download CV</a
+            >
+            <a href="mailto:henriqueluizribeiro123@gmail.com" class="right"
+              >Entrar em contato</a
+            >
           </div>
         </div>
       </div>
-      <div class="section02">
+      <div class="section02" id="section02">
         <span>HABILIDADES</span>
         <div class="logo-container my-5">
           <img src="assets/logo-javascript.svg" alt="" width="90" />
@@ -60,6 +71,140 @@
           <img src="assets/react-2.svg" alt="" />
         </div>
       </div>
+      <div class="section03 mb-5" id="section03">
+        <h2 class="my-5">PROJETOS</h2>
+        <div class="wrapper">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets/Captura de tela 2025-01-22 144338.png"
+              alt="imagem projeto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Album release Page</h5>
+              <p class="card-text">Página promocional para o álbum GNX.</p>
+            </div>
+            <div class="card-body">
+              <a
+                href="https://github.com/HenryyDev/Album-release-page"
+                class="card-link"
+                target="_blank"
+                >Repositório</a
+              >
+
+              <a
+                href="https://henryydev.github.io/Album-release-page/"
+                class="card-link"
+                target="_blank"
+                >Acessar página</a
+              >
+              <img src="assets/View Icon.png" alt="" />
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets/academia.png"
+              alt="imagem projeto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Landing Page Academia</h5>
+              <p class="card-text">Modelo de landing page para academia</p>
+            </div>
+            <div class="card-body">
+              <a
+                href="https://github.com/HenryyDev/Landing-page-academia"
+                target="_blank"
+                class="card-link"
+                >Repositório</a
+              >
+              <a
+                href="https://gymacademy-ecru.vercel.app/"
+                target="_blank"
+                class="card-link"
+                >Acessar página</a
+              >
+              <img src="assets/View Icon.png" alt="" />
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets/calculadora.png"
+              alt="imagem projeto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Calculadora</h5>
+              <p class="card-text">
+                Calculadora utilizando html, css e javaScript Puro
+              </p>
+            </div>
+            <div class="card-body">
+              <a
+                href="https://github.com/HenryyDev/Calculadora"
+                class="card-link"
+                target="_blank"
+                >Repositório</a
+              >
+              <a
+                href="https://henryydev.github.io/Calculadora/"
+                class="card-link"
+                target="_blank"
+                >Acessar página</a
+              >
+              <img src="assets/View Icon.png" alt="" />
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="assets/horario busao.png"
+              alt="imagem projeto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web-Scraping-Urbs</h5>
+              <p class="card-text">
+                Extração automatizada dos horários de ônibus da cidade de
+                Curitiba no site da urbs
+              </p>
+            </div>
+            <div class="card-body">
+              <a
+                href="https://github.com/HenryyDev/web-scraping-horarios-urbs"
+                class="card-link"
+                target="_blank"
+                >Repositório</a
+              >
+              <a
+                href="https://horario-onibuscwb.vercel.app/"
+                class="card-link"
+                target="_blank"
+                >Acessar página</a
+              >
+              <img src="assets/View Icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer id="footer">
+      <div class="container">
+        <span>Contato</span>
+        <p class="my-3">
+          Estou à disposição para ajudar sua empresa a criar interfaces web
+          modernas, funcionais e de alto impacto. Com experiência em HTML, CSS,
+          JavaScript, React e Bootstrap, busco sempre entregar soluções
+          dinâmicas e responsivas que atendam às necessidades dos usuários. Se
+          você está procurando um desenvolvedor comprometido, que está em
+          constante aprendizado e pronto para abraçar novos desafios,
+        </p>
+        <div class="email">
+          <img src="assets/Email Icon.svg" alt="" />
+          <a href="mailto:henriqueluizribeiro123@gmail.com"
+            >henriqueluizribeiro123@gmail.com</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
