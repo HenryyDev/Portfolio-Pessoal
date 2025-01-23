@@ -7,17 +7,40 @@
   font-family: "Poppins", serif;
 }
 :root {
+  --primary-color-dark: #ffff;
+  --primary-color-light: #000000;
+  --color-txtbtn-dark: #000000;
+  --color-txtbtn-light: #ffff;
+  --background-color-dark: #161513;
+  --background-color-light: #d3d3d3;
+  --color-footer-light: #cacaca;
+  --color-footer-dark: #191919;
+  --secondary-text-dark: #c5c5c5;
+  --secondary-text-light: #180000;
   --Secondary-Color: #8491a0;
-  --secondary-text: #c5c5c5;
   --margin: 20px;
   --padding: 20px;
   --gap-header: 20px;
   --gap-logos: 40px;
   --gap-card: 40px;
   --padding-button: 10px;
-  --primary-Color: #ffffff;
-  --card-Color: #2a2a2a;
-  --Background-Color: #161513;
+  --card-color-dark: #2a2a2a;
+  --card-color-light: #cacaca;
+
+  --color-footer: var(--color-footer-dark);
+  --card-Color: var(--card-color-dark);
+  --color-txtbtn: var(--color-txtbtn-dark);
+  --secondary-text: var(--secondary-text-dark);
+  --Background-Color: var(--background-color-dark);
+  --primary-Color: var(--primary-color-dark);
+}
+[data-theme="light"] {
+  --card-Color: var(--card-color-light);
+  --color-txtbtn: var(--color-txtbtn-light);
+  --Background-Color: var(--background-color-light);
+  --primary-Color: var(--primary-color-light);
+  --secondary-text: var(--secondary-text-light);
+  --color-footer: var(--color-footer-light);
 }
 body,
 html {
@@ -26,6 +49,8 @@ html {
 
   overflow-x: hidden;
   background-color: var(--Background-Color);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s,
+    box-shadow 0.3s; /* Transições para todos os elementos visíveis */
 }
 header {
   display: flex;
@@ -37,7 +62,10 @@ header {
   position: fixed;
   z-index: 100;
   backdrop-filter: blur(10px);
-
+  .btn-theme {
+    background: none;
+    border: none;
+  }
   a {
     text-decoration: none;
     color: var(--primary-Color);
@@ -71,7 +99,7 @@ header {
   }
   p {
     color: var(--secondary-text);
-    font-weight: lighter;
+    font-weight: normal;
     margin-bottom: var(--margin);
     font-size: 18px;
   }
@@ -84,7 +112,7 @@ header {
 
   a {
     display: inline-block;
-    color: #000;
+    color: var(--color-txtbtn);
     text-decoration: none;
     margin: var(--margin);
     padding: var(--padding-button);
@@ -191,7 +219,7 @@ footer {
   display: flex;
   align-items: center;
   padding: 40px;
-  background-color: #191919;
+  background-color: var(--color-footer);
   width: 100%;
   span {
     font-size: 23px;
