@@ -23,7 +23,7 @@
   --gap-header: 20px;
   --gap-logos: 40px;
   --gap-card: 40px;
-  --padding-button: 10px;
+  --padding-button: 15px;
   --card-color-dark: #2a2a2a;
   --card-color-light: #cacaca;
 
@@ -186,8 +186,21 @@ header {
   .card {
     background-color: var(--card-Color);
     height: 330px;
+    transition: transform 0.3s ease;
   }
-
+  .card:hover {
+    background: rgb(255, 134, 96);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 134, 96, 1) 0%,
+      rgba(213, 73, 29, 1) 100%
+    );
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .card-img-top {
+    padding: 10px;
+  }
   .card-title {
     font-weight: 800;
     font-size: 19px;
@@ -230,12 +243,19 @@ footer {
     color: var(--secondary-text);
     margin: 0;
   }
-  .email {
-    word-wrap: normal;
+  .contato {
+    margin-top: 10px;
+    white-space: nowrap;
     font-weight: 600;
-    gap: 10px;
+
     a {
+      margin-left: 5px;
       text-decoration: none;
     }
+  }
+}
+@media (max-width: 375px) {
+  .contato {
+    font-size: 14px;
   }
 }
