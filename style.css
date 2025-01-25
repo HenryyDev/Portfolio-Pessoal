@@ -190,6 +190,7 @@ header {
   }
   .card:hover {
     background: rgb(255, 134, 96);
+
     background: linear-gradient(
       90deg,
       rgba(255, 134, 96, 1) 0%,
@@ -197,6 +198,9 @@ header {
     );
     transform: scale(1.1);
     cursor: pointer;
+    .card-text {
+      color: #000;
+    }
   }
   .card-img-top {
     padding: 10px;
