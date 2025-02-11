@@ -46,11 +46,11 @@ body,
 html {
   height: 100vh;
   scroll-behavior: smooth;
-
+  scroll-padding-top: 80px;
   overflow-x: hidden;
   background-color: var(--Background-Color);
   transition: background-color 0.3s, color 0.3s, border-color 0.3s,
-    box-shadow 0.3s; /* Transições para todos os elementos visíveis */
+    box-shadow 0.3s;
 }
 header {
   display: flex;
