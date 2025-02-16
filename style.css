@@ -106,6 +106,7 @@ header {
 }
 .btn-wrapper {
   overflow: hidden;
+  margin-bottom: 2em;
 }
 .btn {
   width: 100%;
@@ -120,10 +121,9 @@ header {
     border-radius: 50px;
     font-weight: 600;
     transition: 0.3s;
-  }
-  a {
     border: none;
     background: var(--primary-Color);
+    width: 200px;
   }
   a:hover {
     transform: scale(0.9);
@@ -185,7 +185,8 @@ header {
   }
   .card {
     background-color: var(--card-Color);
-    height: 330px;
+    height: 370px;
+
     transition: transform 0.3s ease;
   }
   .card:hover {
@@ -212,6 +213,10 @@ header {
   }
   .card-text {
     color: var(--secondary-text);
+  }
+  .card-links {
+    padding: 5px 10px;
+    align-content: end;
   }
 }
 
